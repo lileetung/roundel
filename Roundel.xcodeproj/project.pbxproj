@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000001 /* RoundelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000001 /* RoundelApp.swift */; };
+		A00000000000000000000002 /* DayID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000002 /* DayID.swift */; };
+		A00000000000000000000003 /* CalendarMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000003 /* CalendarMonth.swift */; };
+		A00000000000000000000015 /* TrackingEmojiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000001A /* TrackingEmojiButton.swift */; };
+		A00000000000000000000005 /* DayCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000005 /* DayCellView.swift */; };
+		A00000000000000000000006 /* CalendarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000006 /* CalendarPopoverView.swift */; };
+		A00000000000000000000007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000007 /* Assets.xcassets */; };
+		A00000000000000000000008 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = V00000000000000000000001 /* Localizable.strings */; };
+		A0000000000000000000000E /* YearGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000013 /* YearGrid.swift */; };
+		A0000000000000000000000F /* YearDotGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000014 /* YearDotGridView.swift */; };
+		A00000000000000000000010 /* YearGridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000015 /* YearGridTests.swift */; };
+		A00000000000000000000013 /* HoverHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000018 /* HoverHighlight.swift */; };
+		A00000000000000000000011 /* MarkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000016 /* MarkStore.swift */; };
+		A00000000000000000000014 /* TestCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000019 /* TestCalendar.swift */; };
+		A00000000000000000000012 /* MarkStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000017 /* MarkStoreTests.swift */; };
+		A0000000000000000000000B /* MarkedDayCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000010 /* MarkedDayCSV.swift */; };
+		A0000000000000000000000C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000011 /* DashboardView.swift */; };
+		A0000000000000000000000D /* MarkedDayCSVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000012 /* MarkedDayCSVTests.swift */; };
+		A00000000000000000000009 /* CalendarMonthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000000A /* CalendarMonthTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C00000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = P00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00000000000000000000001;
+			remoteInfo = Roundel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B00000000000000000000001 /* RoundelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundelApp.swift; sourceTree = "<group>"; };
+		B00000000000000000000002 /* DayID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayID.swift; sourceTree = "<group>"; };
+		B00000000000000000000003 /* CalendarMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMonth.swift; sourceTree = "<group>"; };
+		B00000000000000000000005 /* DayCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCellView.swift; sourceTree = "<group>"; };
+		B00000000000000000000006 /* CalendarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPopoverView.swift; sourceTree = "<group>"; };
+		B00000000000000000000007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B00000000000000000000008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00000000000000000000009 /* Roundel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Roundel.entitlements; sourceTree = "<group>"; };
+		B0000000000000000000000A /* CalendarMonthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMonthTests.swift; sourceTree = "<group>"; };
+		B0000000000000000000000B /* Roundel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roundel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0000000000000000000000C /* RoundelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoundelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0000000000000000000000D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B00000000000000000000010 /* MarkedDayCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkedDayCSV.swift; sourceTree = "<group>"; };
+		B00000000000000000000011 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		B00000000000000000000012 /* MarkedDayCSVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkedDayCSVTests.swift; sourceTree = "<group>"; };
+		B00000000000000000000013 /* YearGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearGrid.swift; sourceTree = "<group>"; };
+		B00000000000000000000014 /* YearDotGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearDotGridView.swift; sourceTree = "<group>"; };
+		B00000000000000000000015 /* YearGridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearGridTests.swift; sourceTree = "<group>"; };
+		B00000000000000000000016 /* MarkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkStore.swift; sourceTree = "<group>"; };
+		B00000000000000000000017 /* MarkStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkStoreTests.swift; sourceTree = "<group>"; };
+		B00000000000000000000018 /* HoverHighlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverHighlight.swift; sourceTree = "<group>"; };
+		B00000000000000000000019 /* TestCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCalendar.swift; sourceTree = "<group>"; };
+		B0000000000000000000001A /* TrackingEmojiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingEmojiButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E00000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G00000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				G00000000000000000000002 /* Roundel */,
+				G00000000000000000000008 /* RoundelTests */,
+				G00000000000000000000009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G00000000000000000000002 /* Roundel */ = {
+			isa = PBXGroup;
+			children = (
+				G00000000000000000000003 /* App */,
+				G00000000000000000000004 /* Domain */,
+				G00000000000000000000005 /* Data */,
+				G00000000000000000000006 /* Features */,
+				G00000000000000000000007 /* Resources */,
+			);
+			path = Roundel;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000001 /* RoundelApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000004 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000002 /* DayID.swift */,
+				B00000000000000000000003 /* CalendarMonth.swift */,
+				B00000000000000000000013 /* YearGrid.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000005 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000016 /* MarkStore.swift */,
+				B00000000000000000000010 /* MarkedDayCSV.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000006 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000018 /* HoverHighlight.swift */,
+				G0000000000000000000000A /* Calendar */,
+				G0000000000000000000000B /* Dashboard */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000007 /* Assets.xcassets */,
+				B00000000000000000000009 /* Roundel.entitlements */,
+				B00000000000000000000008 /* Info.plist */,
+				V00000000000000000000001 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000008 /* RoundelTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000000A /* CalendarMonthTests.swift */,
+				B00000000000000000000019 /* TestCalendar.swift */,
+				B00000000000000000000017 /* MarkStoreTests.swift */,
+				B00000000000000000000012 /* MarkedDayCSVTests.swift */,
+				B00000000000000000000015 /* YearGridTests.swift */,
+			);
+			path = RoundelTests;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000000B /* Roundel.app */,
+				B0000000000000000000000C /* RoundelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		G0000000000000000000000A /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000006 /* CalendarPopoverView.swift */,
+				B0000000000000000000001A /* TrackingEmojiButton.swift */,
+				B00000000000000000000005 /* DayCellView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		G0000000000000000000000B /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000011 /* DashboardView.swift */,
+				B00000000000000000000014 /* YearDotGridView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D00000000000000000000001 /* Roundel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = L00000000000000000000002 /* Build configuration list for PBXNativeTarget "Roundel" */;
+			buildPhases = (
+				E00000000000000000000001 /* Sources */,
+				E00000000000000000000002 /* Frameworks */,
+				E00000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Roundel;
+			productName = Roundel;
+			productReference = B0000000000000000000000B /* Roundel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D00000000000000000000002 /* RoundelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = L00000000000000000000003 /* Build configuration list for PBXNativeTarget "RoundelTests" */;
+			buildPhases = (
+				E00000000000000000000004 /* Sources */,
+				E00000000000000000000005 /* Frameworks */,
+				E00000000000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				T00000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = RoundelTests;
+			productName = RoundelTests;
+			productReference = B0000000000000000000000C /* RoundelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					D00000000000000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					D00000000000000000000002 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = D00000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = L00000000000000000000001 /* Build configuration list for PBXProject "Roundel" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G00000000000000000000001;
+			productRefGroup = G00000000000000000000009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D00000000000000000000001 /* Roundel */,
+				D00000000000000000000002 /* RoundelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E00000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000007 /* Assets.xcassets in Resources */,
+				A00000000000000000000008 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E00000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000001 /* RoundelApp.swift in Sources */,
+				A00000000000000000000002 /* DayID.swift in Sources */,
+				A00000000000000000000003 /* CalendarMonth.swift in Sources */,
+				A00000000000000000000015 /* TrackingEmojiButton.swift in Sources */,
+				A00000000000000000000005 /* DayCellView.swift in Sources */,
+				A00000000000000000000006 /* CalendarPopoverView.swift in Sources */,
+				A00000000000000000000013 /* HoverHighlight.swift in Sources */,
+				A00000000000000000000011 /* MarkStore.swift in Sources */,
+				A0000000000000000000000B /* MarkedDayCSV.swift in Sources */,
+				A0000000000000000000000C /* DashboardView.swift in Sources */,
+				A0000000000000000000000E /* YearGrid.swift in Sources */,
+				A0000000000000000000000F /* YearDotGridView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000009 /* CalendarMonthTests.swift in Sources */,
+				A00000000000000000000014 /* TestCalendar.swift in Sources */,
+				A00000000000000000000012 /* MarkStoreTests.swift in Sources */,
+				A0000000000000000000000D /* MarkedDayCSVTests.swift in Sources */,
+				A00000000000000000000010 /* YearGridTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		T00000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00000000000000000000001 /* Roundel */;
+			targetProxy = C00000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		V00000000000000000000001 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0000000000000000000000D /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+		};
+			name = Debug;
+		};
+		F00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Roundel/Resources/Roundel.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Roundel/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lileetung.roundel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+		};
+			name = Debug;
+		};
+		F00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Roundel/Resources/Roundel.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Roundel/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lileetung.roundel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+		};
+			name = Release;
+		};
+		F00000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lileetung.roundel.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roundel.app/Contents/MacOS/Roundel";
+		};
+			name = Debug;
+		};
+		F00000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lileetung.roundel.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roundel.app/Contents/MacOS/Roundel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		L00000000000000000000001 /* Build configuration list for PBXProject "Roundel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00000000000000000000001 /* Debug */,
+				F00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		L00000000000000000000002 /* Build configuration list for PBXNativeTarget "Roundel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00000000000000000000003 /* Debug */,
+				F00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		L00000000000000000000003 /* Build configuration list for PBXNativeTarget "RoundelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00000000000000000000005 /* Debug */,
+				F00000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P00000000000000000000001 /* Project object */;
+}
