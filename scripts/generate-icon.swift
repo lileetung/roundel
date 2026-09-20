@@ -22,6 +22,12 @@ let outputs: [(String, Int)] = [
     ("icon_512x512@2x.png", 1024),
 ]
 
+/// The icon is the mark the app makes: one red ring, the same one a marked day
+/// wears in the calendar, on the app's own near-black.
+///
+/// Proportions follow Apple's macOS icon grid — the rounded square covers 80% of
+/// the canvas, with a corner radius of 22.5% of that square — so Roundel sits
+/// level with the rest of the Dock rather than looking slightly too round.
 func drawIcon(size: Int) throws -> Data {
     guard let bitmap = NSBitmapImageRep(
         bitmapDataPlanes: nil,
@@ -47,39 +53,38 @@ func drawIcon(size: Int) throws -> Data {
     context.setAllowsAntialiasing(true)
     context.setShouldAntialias(true)
 
-    let inset = CGFloat(size) * 0.07
-    let cornerRadius = CGFloat(size) * 0.22
+    let canvas = CGFloat(size)
+    let inset = canvas * 0.10
+    let tileSide = canvas - inset * 2
     let tile = NSBezierPath(
-        roundedRect: NSRect(x: inset, y: inset, width: CGFloat(size) - inset * 2, height: CGFloat(size) - inset * 2),
-        xRadius: cornerRadius,
-        yRadius: cornerRadius
+        roundedRect: NSRect(x: inset, y: inset, width: tileSide, height: tileSide),
+        xRadius: tileSide * 0.225,
+        yRadius: tileSide * 0.225
     )
-    NSColor(calibratedRed: 0.11, green: 0.12, blue: 0.15, alpha: 1).setFill()
+    NSColor(calibratedRed: 0.09, green: 0.09, blue: 0.10, alpha: 1).setFill()
     tile.fill()
 
-    let ringColor = NSColor(calibratedRed: 0.99, green: 0.42, blue: 0.36, alpha: 1)
-    let quietColor = NSColor.white.withAlphaComponent(0.9)
-    let radius = CGFloat(size) * 0.066
-    let spacing = CGFloat(size) * 0.19
-    let center = CGFloat(size) / 2
+    // Apple's dark-mode system red, which is what the calendar actually draws.
+    let ringColor = NSColor(calibratedRed: 1.0, green: 0.27, blue: 0.23, alpha: 1)
 
-    for row in -1...1 {
-        for column in -1...1 {
-            let point = NSPoint(
-                x: center + CGFloat(column) * spacing,
-                y: center + CGFloat(row) * spacing
-            )
-            let dotRect = NSRect(
-                x: point.x - radius,
-                y: point.y - radius,
-                width: radius * 2,
-                height: radius * 2
-            )
-            let dot = NSBezierPath(ovalIn: dotRect)
-            ((row == 0 && column == 0) ? ringColor : quietColor).setFill()
-            dot.fill()
-        }
-    }
+    // Proportionally heavier than the 30pt calendar cell: a stroke that thin
+    // disappears at 16px, where the icon still has to read as a ring.
+    let strokeWidth = canvas * 0.075
+    let diameter = canvas * 0.56
+    let ringRect = NSRect(
+        x: (canvas - diameter) / 2,
+        y: (canvas - diameter) / 2,
+        width: diameter,
+        height: diameter
+    )
+
+    // Left hollow. The calendar tints a marked day at six per cent, which is
+    // almost nothing; anything heavier here reads as a filled disc instead of a
+    // day with a ring around it.
+    let ring = NSBezierPath(ovalIn: ringRect.insetBy(dx: strokeWidth / 2, dy: strokeWidth / 2))
+    ring.lineWidth = strokeWidth
+    ringColor.setStroke()
+    ring.stroke()
 
     guard let png = bitmap.representation(using: .png, properties: [:]) else {
         throw NSError(domain: "RoundelIcon", code: 2)
