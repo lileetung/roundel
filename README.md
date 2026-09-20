@@ -18,12 +18,23 @@ row. Roundel asks one question: did it happen today? Click the day.
 
 - **One click a day.** Click a date to ring it, click again to clear it. Days
   that have not arrived cannot be marked.
-- **A year at a glance.** The dashboard draws every day of the year as a dot,
-  markable in place — the shortest route to a day you missed two months ago.
 - **An emoji for what you are tracking**, so the calendar says what it is for.
 - **Your data is a file.** Marks live in a plain CSV you can export, edit in a
   spreadsheet, and import back.
 - **Nothing leaves your Mac.** No account, no network, no analytics.
+
+## The year, at a glance
+
+<p align="center">
+  <img src="docs/dashboard.png" width="758" alt="The Roundel dashboard showing 2026 as a grid of dots, twelve of them red, with today outlined in September.">
+</p>
+
+Every day of the year, one dot per day and one column per week. Twelve red dots
+among three hundred grey ones says more about a habit than a number does — and a
+missed day stays one pale dot rather than a streak reset to zero.
+
+Click any dot to mark that day, which is the shortest route to a day you missed
+two months ago. Export and import CSV from here, and quit the app.
 
 ## Install
 
